@@ -1,13 +1,9 @@
-# floral_daily_sku_analysis
-data analytics project showcasing floral daily SKU analysis using python, SQL and Power BI.
+
 
 # Floral Daily-SKU Analytics
 
 > End-to-end demo showing daily SKU analysis for a **Floral** department using **Python (EDA)**, **SQL (analysis)**, and **Power BI (dashboard)**.
 
-<p align="center">
-  <img src="docs/dashboard-cover.png" alt="Power BI dashboard preview" width="900">
-</p>
 
 ## Table of Contents
 - [Overview](#overview)
@@ -80,26 +76,24 @@ Reusable queries for:
 
   ### Power BI (decision dashboard)
 
-Cards for Units, Sales, Cost, Shrink
+- Cards for **Units, Sales, Cost, Shrink**
+- Slicers: **Relative Date**, **Category**, **SKU (dropdown + search)**, **Promo flag model**, **Holiday window**
+- Visuals: **Sales $ vs Waste % (last 26w)**, **Holiday window: Units vs Baseline (6w)**, **Waste $ by category**, **Promo uplift % by SKU**
 
-Slicers: Relative Date, Category, SKU (dropdown + search),
-Promo flag model, Holiday window
+---
 
-Visuals: Sales $ vs Waste % (last 26w), Holiday window: Units vs Baseline (6w),
-Waste $ by category, Promo uplift % by SKU
+### Quick start
 
-Quick start
+1. **Python** – open the EDA notebook and point file paths to the `.csv` files.
+2. **SQL** – load CSVs to your DB (or use DuckDB) and run `05_Floral_ Department_ Analytics.sql`.
+3. **Power BI** – open the `.pbix`. If prompted, map data sources to your local CSVs/DB.
 
-Python – open the EDA notebook and point file paths to the csv files.
+---
 
-SQL – load CSVs to your DB (or use DuckDB) and run 05_Floral_ Department_ Analytics.sql.
+### Sample insights
 
-Power BI – open the .pbix. If prompted, map data sources to your local CSVs/DB.
+- **Holiday spikes:** units jump **5–10×**; price sensitivity drops during peak weeks.
+- **Category patterns:** **Bouquet** drives most revenue & waste $; **Plant** has higher unit margin with slower turns.
+- **Operational levers:** closing-hour markdowns reduce post-holiday waste; monitor under-stock risk on peak weeks.
 
-Sample insights
 
-Holiday spikes: units jump 5–10×; price sensitivity drops during peak weeks.
-
-Category patterns: Bouquet drives most revenue & waste $; Plant has higher unit margin with slower turns.
-
-Operational levers: closing-hour markdowns reduce post-holiday waste; monitor under-stock risk on peak weeks.
