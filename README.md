@@ -77,3 +77,29 @@ Reusable queries for:
   SELECT date, sku
   FROM DailySKU
   WHERE on_hand_beg + delivery_qty < sales_qty;
+
+  ### Power BI (decision dashboard)
+
+Cards for Units, Sales, Cost, Shrink
+
+Slicers: Relative Date, Category, SKU (dropdown + search),
+Promo flag model, Holiday window
+
+Visuals: Sales $ vs Waste % (last 26w), Holiday window: Units vs Baseline (6w),
+Waste $ by category, Promo uplift % by SKU
+
+Quick start
+
+Python – open the EDA notebook and point file paths to the csv files.
+
+SQL – load CSVs to your DB (or use DuckDB) and run 05_Floral_ Department_ Analytics.sql.
+
+Power BI – open the .pbix. If prompted, map data sources to your local CSVs/DB.
+
+Sample insights
+
+Holiday spikes: units jump 5–10×; price sensitivity drops during peak weeks.
+
+Category patterns: Bouquet drives most revenue & waste $; Plant has higher unit margin with slower turns.
+
+Operational levers: closing-hour markdowns reduce post-holiday waste; monitor under-stock risk on peak weeks.
